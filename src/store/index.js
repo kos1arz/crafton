@@ -1,12 +1,11 @@
-import { createStore } from 'vuex'
+import { createApp } from 'vue';
+import Vuex from 'vuex';
+import git from './modules/git';
 
-export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+createApp().use(Vuex);
+
+export default new Vuex.Store({
   modules: {
+    git
   }
-})
+});
